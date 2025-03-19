@@ -1,0 +1,52 @@
+/*---------------------------------- EJERCICIO 6 ---------------------------- */
+.ejercicio6 input:required {
+    /* :required -> se aplica a todos los imput del html que tengan required */
+    border-color: red;
+    border-width: 5px;
+}
+
+
+/*---------------------------------- EJERCICIO 7 ---------------------------- */
+.ejercicio7 a{
+    /* Cuando los enlaces no son visitados */
+    /* Necesitas nunca haber visitado una pagina para que aparesca azul el link ya que el navegador almacena navegacion*/
+    color: blue; 
+}
+.ejercicio7 a:visited {
+    /* Cuando los enlaces son visitados de ponene en gris */
+    
+    color: gray;
+}
+.ejercicio7 a:hover{
+    /* Cuando el cursos va a seleccionar un enlace */
+    color:aqua;
+}
+
+/*---------------------------------- EJERCICIO 8 ---------------------------- */
+
+.ejercicio8 td:nth-child(2){
+    background-color: brown;
+}
+
+/* Dependiendo de que etiqueta tomo, se aplica el formato a esa etiqueta */
+/* .ejercicio8 th:nth-child(2){
+    background-color: brown;
+}
+
+.ejercicio8 tr:nth-child(2){
+    background-color: brown;
+} */
+
+/*---------------------------------- EJERCICIO 9 ---------------------------- */
+
+.ejercicio9 p:has(a){
+    background-color: yellow;
+}
+
+/*---------------------------------- EJERCICIO 10 ---------------------------- */
+/* .contenedor *:nth-child(odd){
+    background-color: blue;
+} */
+.contenedor div:nth-child(odd){
+    background-color: blue;
+}

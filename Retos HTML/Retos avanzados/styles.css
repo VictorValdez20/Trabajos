@@ -1,0 +1,39 @@
+/*---------------------------------- EJERCICIO 11 ---------------------------- */
+.ejercicio11 button:focus {
+    background-color: green;
+    
+}
+.ejercicio11 button:disabled {
+    background-color:blue;
+    opacity: 0.5;
+}
+
+/*---------------------------------- EJERCICIO 12 ---------------------------- */
+.ejercicio12 li:empty{
+    /* estaba usando "empty-cells: hide;" pero no es correcto*/
+    /* display: none, no muestra el elemento en la pantalla */
+    display: none;
+}
+
+/*---------------------------------- EJERCICIO 13 ---------------------------- */
+.ejercicio13 td:last-child{
+    background-color: yellow;
+}
+
+/*---------------------------------- EJERCICIO 14 ---------------------------- */
+/* Esto es correcto pero (.ejercicio14 tr:nth-child(even)) toma todos los elementos de la tabla */
+/* .ejercicio14 tr:nth-child(n + 4), .ejercicio14 tr:nth-child(even){
+    background-color: green;
+} */
+
+/* Aqui se seleccionan los pares a partir de la tercera fila */
+.ejercicio14 tr:nth-child(n + 4):nth-child(even){
+    /* podria usar odd o even, el chiste es poner estilos alternos */
+    background-color: green;
+}
+
+/*---------------------------------- EJERCICIO 15 ---------------------------- */
+.ejercicio15 li:not(li:last-child){
+    color: yellow;
+}
+
