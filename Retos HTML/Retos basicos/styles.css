@@ -1,0 +1,42 @@
+/*---------------------------------- EJERCICIO 1 ---------------------------- */
+.ejercicio1 li:nth-child(odd) {
+    /* nth-child() -> selecciona un elemnto segun su posicion */
+    /* odd significa "impar" */
+    background-color: yellow;
+} 
+/*---------------------------------- EJERCICIO 2 ---------------------------- */
+.ejercicio2 li:nth-child(even){
+    background-color: yellow;
+}
+
+/*---------------------------------- EJERCICIO 3 ---------------------------- */
+/* Esto no es correcto:
+.ejercicio3 li:first-child() li:last-child(){
+    color: brown;
+} */
+
+/* Se debe aplicar asi porque se aplica un "estilo" elemento a elemento: */
+/* Se lee de derecha a irquierda: A B(DENTRO DE A) C(DENTRO DE B) */
+/* Es como ver cajas dentro de otras cajas */
+.ejercicio3 li:first-child, .ejercicio3 li:last-child{
+    /* 
+    first-child -> selecciona el primer elemento de algo
+    last-child -> selecciona el ultimo elemento de algo
+    */
+    color: brown;
+}
+
+/*---------------------------------- EJERCICIO 4 ---------------------------- */
+/*contenidos en .ejercicio4       para todos los "<p>"            :pero selecciona aquellos que no cumplen con esto(escoje el primer hijo de los parrafos) */
+/* .ejercicio4                   p                                  :not                                                    (p:first-child){ */
+.ejercicio4 p:not(p:first-child){
+    background-color: blue;
+}
+
+/*---------------------------------- EJERCICIO 5 ---------------------------- */
+.ejercicio5 li:nth-child(3){
+    background-color: blueviolet;
+}
+
+
+

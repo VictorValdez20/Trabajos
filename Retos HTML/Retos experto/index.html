@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- 16.- Resalta las primera tres palabras de cada parrafo -->
+        <div class="ejercicio16">
+            <p><span>Este parrafo es</span> el primero, buen dia</p>
+            <p><span>Este parrafo es</span> el primero, buen dia</p>
+        </div>
+
+        <!-- 17.- Aplica un estilo a todos los elementos que contienen la palabra "importante en su texto" -->
+        <div class="ejercicio17">
+            <p>Este tiene la palabra importante</p>
+            <li>Este no tiene la palabra</li>
+            <p>Pero este ahora si tiene importante</p>
+        </div>
+
+        <!-- 18.- Cambia el color del borde de un <input> cuando el usuario escribe sobre el -->
+        <!-- <div class="ejercicio18">
+            <input type="text">
+        </div> -->
+        <!-- De esta forma en el css ya tiene que ser difrecto sin buscar la estiqueta input -->
+        <input type="text" class="ejercicio18">
+
+        <!-- 19.- Resalta todos los <p> que sean el primer hijo de su contenedor -->
+        <div class="ejercicio19">
+            <div>
+                <p>Holaa 1</p>
+                <p>Holaa 2</p>
+            </div>
+            <div>
+                <p>que hace 1</p>
+                <p>que hace 2</p>
+
+            </div>
+
+        </div>
+
+        <!-- 20.- selecciona y cambi el color de cada tercer elemento en una lista de 10 elementos-->
+        <ul class="ejercicio20">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+            <li>elemento 7</li>
+            <li>Elemento 8</li>
+            <li>Elemento 9</li>
+            <li>Elemento 10</li>
+          </ul>
+
+
+
+    </header>
+
+    <script>
+        document.querySelectorAll(".ejercicio17 *").forEach((element) => {
+            if (element.innerText.includes("importante")) {
+                element.style.color = "yellow";
+            }
+        });
+    </script>
+</body>
+</html>
